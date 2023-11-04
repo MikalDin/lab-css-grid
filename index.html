@@ -1,42 +1,104 @@
+
+display: flex;
+grid-template-columns:1fr 2fr 2 fr;
+gap: 10px;
+gap:10px 240px;
+}
+.logo img {
+height: 50px;
+margin: 15px 0 0 15px;
+width: auto;
+}
+
+.menu ul {
+padding: 0;
+}
+
+.menu ul li {
+display: inline-block;
+padding: 15px;
+}
+
+.menu a {
+color: white;
+text-decoration: none;
+}
+.primary-content{
+display: grid;
+grid-template-columns: 250px 1fr;
+}
+
+
+.sidebar {
+background: #2d2d2d;
+color: white;
+text-align: center;
+height: 800px;
+width: 250px;
+float: left;
+}
+
+.main {
+background: #ececec;
+height: 750px;
+text-align: center;
+
+}
+
+
+
+.footer {
+background: yellow;
+padding: 10px;
+text-align: center;
+}
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Grid</title>
-  <link href="./style.css" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Grid</title>
+<link href="./style.css" rel="stylesheet" />
 </head>
 
 <body>
-  <div class="header">
-    <div class="logo"><img src="./assets/pursuit-logo.png" alt="Pursuit logo" /></div>
-    <div class="menu">
-      <ul>
-        <li>
-          <a href="https://pursuit.org">Pursuit Home Page</a>
+
+<div class="header">
+  <div class="container">
+
+     <div class="logo"><img src="./assets/pursuit-logo.png" alt="Pursuit logo" /></div>
+    
+   
+     <div class="menu">
+       <ul>
+       <li>
+        <a href="https://pursuit.org">PURsUIT HOME PAGE</a>
         </li>
         <li>
-          <a href="https://github.com/joinpursuit">Pursuit GitHub</a>
+        <a href="https://github.com/joinpursuit">Pursuit GitHub</a>
         </li>
-      </ul>
+       </ul>
+      </div>
+    </div>
     </div>
   </div>
 
-  <div class="primary-content">
-    <div class="sidebar">
-      <p>Sidebar.</p>
-    </div>
-
-    <div class="main">
-      <p>Main content goes here.</p>
-    </div>
+<div class="primary-content">
+  <div class="sidebar">
+    <p>Sidebar.</p>
   </div>
 
-  <div class="footer">
-    <div>Footer goes here.</div>
+  <div class="main">
+    <p>Main content goes here.</p>
   </div>
+</div>
+
+<div class="footer">
+  <div>Footer goes here.</div>
+</div>
 </body>
-
 </html>
